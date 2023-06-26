@@ -7,7 +7,7 @@
 - метод - GET
 - URL - games.alpha.g-spot.website/api/v1/reference/subgenre/
 3. Вкладка Authorization
-Авторизоваться: использовать валидные значения Username:tester, Password:tester
+Авторизоваться, используя [данные](https://github.com/victoretc/GSPOTtestingdocumentation/blob/main/Authorization_data.md).
 5. Отправить запрос
 
 Ожидаемый результат:
