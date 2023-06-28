@@ -1,6 +1,6 @@
 ### Games reference/languages/ 
 ###### POST reference_languages_create
-###### language name contains a space at the beginning of the word
+###### language name contains a space at the end of the word
 
 ### *Step:*
 1. Создать в Postman новый запрос: ***POST***, url: https://games.alpha.g-spot.website/api/v1/reference/languages/
