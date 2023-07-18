@@ -1,21 +1,21 @@
 ### Payments
-#### External Payments Payment Commission {id} (negative - empty commission)
+#### External Payments Payment Commission {id} (negative - non existent payment_service_id)
 
 Тестовые данные: https://payments.alpha.g-spot.website/v1/external_payments/commissions/{id}/
 
 
-Предусловия:   1)сервис должен быть создан (с помощью api/v1/external_payments/services/ метод POST) - из него берется id для "payment_service_id"
-               2) данные должны быть созданы (с помощью /v1/external_payments/commissions/ - метод POST)
+Предусловия:    1) сервис не должен быть создан 
+                2) данные должны быть созданы (с помощью /v1/external_payments/commissions/ - метод POST)
 
 
 1. Создать новый запрос в Postman
-2. Выбрать метод PUT для Request
+2. Выбрать метод PATCH для Request
 3. Ввести URL: https://payments.alpha.g-spot.website/v1/external_payments/commissions/30/
 4. Ввести в Body -> raw -> JSON:
 {
   "payment_type": "bank_card",
-  "commission": "",
-  "payment_service_id": 8
+  "commission": "1",
+  "payment_service_id": 107
 }
 5. Отправить Request
 
@@ -24,8 +24,8 @@
 Body response:
 
 {
-    "commission": [
-        "A valid number is required."
+    "payment_service_id": [
+        "Invalid pk \"107\" - object does not exist."
     ]
 }
 
@@ -37,4 +37,4 @@ Body response:
 Тест выполнен
 | Дата | Время | Результат | Имя | Баг № Trello |
 | --- | --- | --- | --- | --- |
-| 2023-07-11 | 13:45 | Passed | Евгений | - | 
+| 2023-07-17 | 15:10 | Passed | Евгений | - | 
