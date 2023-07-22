@@ -15,13 +15,13 @@ PARAMS
 
 VALUE  3fa85f64-5717-4562-b3fc-2c963f66afa6
 
-Ожидаемый результат: 200 
-
-Фактический результат: 200 OK 
+Ожидаемый результат: 200 OK 
 
 {
     "account_number": "878797979",
+    
     "is_auto_payout": true,
+    
     "payout_type": "yoo_money"
 }
 
