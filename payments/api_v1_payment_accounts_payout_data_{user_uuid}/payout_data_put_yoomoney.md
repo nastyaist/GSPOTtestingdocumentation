@@ -21,15 +21,15 @@ https://payments.alpha.g-spot.website/api/v1/payment_accounts/payout_data/3fa85f
 }
 Отправить Request
 
-Ожидаемый результат: 200
-
-Фактический результат: 200 OK 
+Ожидаемый результат: 200 OK 
 
 {
     "account_number": "4100116075156746",
     "is_auto_payout": true,
     "payout_type": "yoo_money"
 }
+
+Постусловие: удалить тестовые данные
 
 Автор: Юлия
 
