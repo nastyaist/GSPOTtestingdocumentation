@@ -14,8 +14,7 @@ PAYOUT DATA
 
 Ожидаемый результат: 200 OK
 
-{
-    "account_number": "4100116075156746",
+{"account_number": "4100116075156746",
     
     "is_auto_payout": true,
     
