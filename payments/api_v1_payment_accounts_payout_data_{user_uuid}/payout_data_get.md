@@ -10,8 +10,10 @@ PAYOUT DATA
 2.Выбрать метод GET для Request
 
 3.Ввести URL: https://payments.alpha.g-spot.website/api/v1/payment_accounts/payout_data/:user_uuid/
+
 PARAMS 
-VALUE 3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+VALUE  3fa85f64-5717-4562-b3fc-2c963f66afa6
 
 Ожидаемый результат: 200 
 
