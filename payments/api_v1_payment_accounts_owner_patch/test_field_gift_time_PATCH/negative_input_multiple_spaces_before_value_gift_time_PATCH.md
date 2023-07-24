@@ -1,10 +1,10 @@
 ### Payments
-#### Payment_accounts_owner_negative_empty_value_comission_PUT
+#### Payment_accounts_owner_negative_input_multiple_spaces_before_value_gift_time_PATCH
 
 Тестовые данные: https://payments.alpha.g-spot.website/api/v1/payment_accounts/owner/
 
 
-1. Создать новый запрос в Postman, выбрать метод PUT
+1. Создать новый запрос в Postman, выбрать метод PATCH
 
 2. Ввести URL: https://payments.alpha.g-spot.website/api/v1/payment_accounts/owner/
 
@@ -12,13 +12,13 @@
 
 4. Вставить данные в окно ввода
 {
-  "commission": "344",
-  "frozen_time": "00:00:00",
-  "gift_time": "00:00:00",
-  "payout_day_of_month": 13
+  "commission": "33",
+  "frozen_time": "11:11:11",
+  "gift_time": "19:36:11",
+  "payout_day_of_month": 21
 }
 
-5. Удалить значение в поле "commission"-(пример "")
+5. Ввести пробелы перед значением в поле "gift_time" (пример "  19:36:11")
 
 6. Нажать кнопку “Send”
 
@@ -26,9 +26,9 @@
 
 Body response:
 {
-    "commission": [
-        "A valid number is required."
-    ]
+    "gift_time": [
+        "Duration has wrong format. Use one of these formats instead: [DD] [HH:[MM:]]ss[.uuuuuu]."
+    
 }
 
 Постусловие: удалить тестовые данные
@@ -38,4 +38,4 @@ Body response:
 Тест выполнен
 |     Дата    | Время | Результат |   Имя  | Баг №Trello|
 |     ---     |  ---  |    ---    |   ---  |    ---     |
-|  2023-07-13 | 16:12 |   Passed  | Василий|     -      | 
+|  2023-07-24 | 14:28 |   Passed  | Василий|     -      | 
